@@ -1,6 +1,10 @@
 [
     {
-        "caption": "RST Preview",
+        "caption": "RstPreview: Preview reStructuredText file in your default browser",
         "command": "rstpreview"
+    },
+    {
+        "caption": "RstPreview: Open reStructuredText cheat sheet",
+        "command": "rst_cheatsheet"
     }
 ]
