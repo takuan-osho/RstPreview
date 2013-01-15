@@ -60,6 +60,18 @@ def render_in_browser(html):
     server.handle_request()
 
 
+class RstCheatsheetCommand(TextCommand):
+    """
+    open reStructuredText cheat sheet in ST2
+    """
+
+    def run(self, edit):
+        cheatsheet = os.path.join(
+            sublime.packages_path(), 'RstPreview', 'cheatsheet.rst')
+        self.view.window().open_file(cheatsheet)
+        sublime.status_message('reStructuredText cheat sheet opened')
+
+
 class RstpreviewCommand(TextCommand):
 
     def run(self, edit):
